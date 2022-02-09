@@ -7,22 +7,23 @@ TASK 1: **CREATE TUITION CENTERS**
   **URL**: http://localhost:8080/tuition_center/create
   
   **Request Body**:
-  {
-    "centerName": "Verma Institute",
-	  "centerCode": "IPAKMILDVERM",
-	  "address": {
-      "detailedAddress": "Bahwanpura colony near sai baba mandir maharashtra",
-	    "city":"Pune",
-	    "state": "Maharashtra",
-	    "pincode": "180004"
-    },
-	  "studentCapacity": 100,
-	  "coursesOffered": [
-        "PCM", "COMMERCE", "Biology", "Zoology"
-      ],
-	  "contactEmail": "vermatit@yahoo.com",
-	  "contactPhone": "1912456517"
-  }
+ 	
+	{
+	    "centerName": "Verma Institute",
+		"centerCode": "IPAKMILDVERM",
+		"address": {
+		"detailedAddress": "Bahwanpura colony near sai baba mandir maharashtra",
+		    "city":"Pune",
+		    "state": "Maharashtra",
+		    "pincode": "180004"
+	    },
+		"studentCapacity": 100,
+		"coursesOffered": [
+		"PCM", "COMMERCE", "Biology", "Zoology"
+	    ],
+		"contactEmail": "vermatit@yahoo.com",
+		"contactPhone": "1912456517"
+	}
   
   **Server Response**:
   
