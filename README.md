@@ -53,6 +53,39 @@ TASK 1: **CREATE TUITION CENTERS**
     "success": true
     }
     
+    **If any validation error occur**
+    
+    **Request Body**:
+    	{
+	    "centerName": "Argade Institute of Science",
+		"centerCode": "123", // LENGTH < 12
+		"address": {
+		"detailedAddress": "Bahwanpura colony near sai baba mandir maharashtra",
+		    "city":"Pune",
+		    "state": "Maharashtra",
+		    "pincode": "180004"
+	    },
+		"studentCapacity": 100,
+		"coursesOffered": [
+		"PCM"
+	    ],
+		"contactEmail": "vipalymgmail.com", // INVALID EMAIL
+		"contactPhone": "101202303311" // Invalid Phone
+	}
+	
+	**SERVER Response**
+	
+		{
+		    "statusCode": 409,
+		    "message": "Error(s) occured.",
+		    "data": [
+			"Center code should be exactly 12 characters",
+			"Provide a valid phone number",
+			"Email should be valid"
+		    ],
+		    "success": false
+		}
+    
     
  TASK 2: **FETCH ALL CENTERS**
  
@@ -106,3 +139,13 @@ TASK 1: **CREATE TUITION CENTERS**
 	    ],
 	    "success": true
 	}
+
+	**IF NO Data exist**
+	
+		**SERVER Response**
+			{
+			    "statusCode": 404,
+			    "message": "No data exist.",
+			    "data": null,
+			    "success": true
+			}
