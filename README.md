@@ -4,7 +4,7 @@
 TASK 1: **CREATE TUITION CENTERS**
 
   **POST Request**: 
-  URL: http://localhost:8080/tuition_center/create
+  **URL**: http://localhost:8080/tuition_center/create
   
   **Request Body**:
   {
@@ -90,7 +90,7 @@ TASK 1: **CREATE TUITION CENTERS**
  TASK 2: **FETCH ALL CENTERS**
  
  **GET Request**
- **URL**:
+ **URL**: http://localhost:8080/tuition_center/find_all
  
  **SERVER Response**:
 	 {
