@@ -94,6 +94,7 @@ TASK 1: **CREATE TUITION CENTERS**
  **URL**: http://localhost:8080/tuition_center/find_all
  
  **SERVER Response**:
+ 
 	 {
 	    "statusCode": 200,
 	    "message": "2 center(s) found",
@@ -115,7 +116,7 @@ TASK 1: **CREATE TUITION CENTERS**
 			"Biology",
 			"Zoology"
 		    ],
-		    "createdOn": 1644390103013,
+		    "createdOn": 1644390862518,
 		    "contactEmail": "vermatit@yahoo.com",
 		    "contactPhone": "1912456517"
 		},
@@ -133,7 +134,7 @@ TASK 1: **CREATE TUITION CENTERS**
 		    "coursesOffered": [
 			"PCM"
 		    ],
-		    "createdOn": 1644390181107,
+		    "createdOn": 1644390878951,
 		    "contactEmail": "vipalym@gmail.com",
 		    "contactPhone": "1012023033"
 		}
@@ -141,12 +142,12 @@ TASK 1: **CREATE TUITION CENTERS**
 	    "success": true
 	}
 
-	**IF NO Data exist**
+**IF NO Data exist**
 	
-		**SERVER Response**
-			{
-			    "statusCode": 404,
-			    "message": "No data exist.",
-			    "data": null,
-			    "success": true
-			}
+	**SERVER Response**
+		{
+		    "statusCode": 404,
+		    "message": "No data exist.",
+		    "data": null,
+		    "success": true
+		}
